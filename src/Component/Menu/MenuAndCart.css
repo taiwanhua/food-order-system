@@ -1,0 +1,57 @@
+.container {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    padding: 3vmin;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.menu-container, .cart-container {
+    position: relative;
+    font-size: 1.5rem;
+    flex-grow: 0;
+    box-sizing: border-box;
+    max-width: 50%;
+    flex-basis: 50%;
+    min-width: 375px;
+}
+
+.menu-item {
+    color: blue
+}
+
+.clear-cart {
+    position: absolute;
+    left: 10rem;
+    top: 3rem;
+    background-color: #eaa8a8;
+    border-radius: 1rem;
+    border: dashed 3px #e03c1f;
+    cursor: pointer;
+}
+
+.submit-cart {
+    background-color: #aae3ea;
+    border-radius: 1rem;
+    border: dashed 3px green;
+    cursor: pointer;
+}
+
+.add-cart {
+    background-color: #d1eac0;
+    border-radius: 1rem;
+    border: dashed 3px #60b2e4;
+    cursor: pointer;
+}
+
+.minus-cart {
+    background-color: #eacfaa;
+    border-radius: 1rem;
+    border: dashed 3px tomato;
+    cursor: pointer;
+}

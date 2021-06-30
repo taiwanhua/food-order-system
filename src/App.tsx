@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import * as React from 'react'
 import './App.css';
+import { MenuAndCart } from './Component/Menu';
+import { useWindowSize } from './Hooks/useWindowSize';
+import { History } from './Component/History'
 
 function App() {
+
+  const [, height] = useWindowSize();
+  const [showHistory, setShowHistory] = React.useState(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* 一般是不會寫 inline-style 這裡因為case不複雜，且非題目重點而使用 */}
+      <div className="App" style={{ height: `${height}px`, textAlign: "center" }}>
+        <header className="App-header">
+          <h1>
+            food order system client
+          </h1>
+        </header>
+
+        <MenuAndCart />
+
+        <button className="view-history" onClick={() => { setShowHistory(s => !s) }}>View History</button>
+
+        {showHistory && <History close={() => { setShowHistory(s => !s) }} />}
+
+      </div>
+    </>
   );
 }
 

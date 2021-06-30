@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`match History Snapshot 1`] = `
+Array [
+  <div
+    className="history-bg"
+    data-testid="history-bg"
+    style={
+      Object {
+        "height": "768px",
+      }
+    }
+  />,
+  <div
+    className="history-content"
+  >
+    <p>
+      No history ! please place an order first！
+    </p>
+    <button
+      className="history-close"
+      data-testid="history-close"
+      onClick={[Function]}
+    >
+      close
+    </button>
+    <button
+      className="history-clear"
+      data-testid="history-clear"
+      onClick={[Function]}
+    >
+      clear
+    </button>
+  </div>,
+]
+`;

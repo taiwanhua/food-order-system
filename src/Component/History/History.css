@@ -1,0 +1,51 @@
+.order-container {
+    border-bottom: 1px solid gray;
+    padding: 1rem;
+    margin: 0.5rem;
+    background: #ffc776;
+    box-sizing: border-box;
+}
+
+.history-bg {
+    width: 100%;
+    background-color: rgba(60,58,58,0.6);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    box-sizing: border-box;
+}
+
+.history-content {
+    height: auto;
+    width: 20rem;
+    padding-top: 1.5rem;
+    max-height: 50%;
+    background-color: #fff;
+    overflow-y: scroll;
+    position: fixed;
+    z-index: 101;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+}
+
+.history-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #aae3ea;
+    border-radius: 1rem;
+    border: dashed 3px green;
+    cursor: pointer;
+}
+
+.history-clear {
+    position: absolute;
+    top: 0;
+    right: 4rem;
+    background-color: #eaa8a8;
+    border-radius: 1rem;
+    border: dashed 3px #e03c1f;
+    cursor: pointer;
+}
