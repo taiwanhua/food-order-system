@@ -1,46 +1,72 @@
-# Getting Started with Create React App
+# Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## just view in browser :
 
-## Available Scripts
+```
+    npm install
+    npm run start
+```
 
-In the project directory, you can run:
+## both desktop app and web app
+```
+    npm install
+    npm run electron:start
+```
 
-### `yarn start`
+# Publish 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Web app
+```
+    npm run build
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Desktop app (windows : --x64 --ia32, mac, linux )
 
-### `yarn test`
+```
+    npm run electron:build-windows // 手邊沒有mac，所以僅windows的有安裝開啟來看看
+    npm run electron:build-mac
+    npm run electron:build-linux
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Task
+- [x] This task is to develop a solution for the below mentioned problem. You are excepted to build a web (or electron, see additional task) application.
 
-### `yarn build`
+- [x] The key focus area will be the design of the solution and the structure of the code. Weightage will be given to clear design, extensibility of code to allow easy addition of features, modularity to ensure clear separation of concerns.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [x] You are expected to provide a zip file of the entire source tree, also including the git history. You need to provide a README.md to describe the prerequisites that build/run your application, include the platform, programming language version
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Environment
+The application must use the following library/framework to build:
+- [x] React
+- [x] React-redux
+- [x] Webpack
+- [x] Typescript (Optional)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Problem description
+This task to create a food order system client with the following functions:
 
-### `yarn eject`
+## Menu
+- [x] shows all foods places in different catagory
+- [x] at least 3 kinds of catagory and 3 kinds of food in each catagory
+- [x] user can add food to cart
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Cart
+- [x] shows all foods in cart
+- [x] user can change amount of food or remove it
+- [x] submit the order
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## History
+- [x] must in different page or popup window
+- [x] shows all order details
+- [x] user can clear history
+- [x] Other necesseary parts can be mocked, the history and other states doesnât need to save after the application closed.
+- [x] Unit tests must be preform to your code.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Additional Task
+This part is the additional feature, you donât have to accomplish the following features. But you can challenge yourself if you want and you have free time.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [x] Wrap the application with electron
+- [ ] store the history in a backend server (此部分與其多開一包後端的code與DB，更期待未來能與團隊直接合作)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 心得
+感謝本次面試題目，讓我有機會能接觸到React生態系中有關於桌面應用的開發(electron)，過程中學習了很多相關知識，亦啟發了我很多想法與探索慾望，最後由衷感謝提供本次面試題目與機會，謝謝。
